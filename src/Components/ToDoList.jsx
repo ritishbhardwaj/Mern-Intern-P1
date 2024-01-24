@@ -22,9 +22,10 @@ export default function ToDoList() {
                   <p>type your thoughts on laptop's notebook today</p>
                 </div>
                 <div className="col-4">
-                  <button type="button" className="btn btn-success">
-                    Delete
-                  </button>
+                  <div className="row">
+                  <div className="col-4"><button type="button" className="btn btn-danger">Delete</button></div>
+                  <div className="col-6"><button type="button" className="btn btn-success">Edit </button></div>
+                  </div>
                 </div>
               </div>
             </td>
@@ -39,7 +40,7 @@ export default function ToDoList() {
                 </div>
                 <div className="col-4">
                   {" "}
-                  <button type="button" className="btn btn-success">
+                  <button type="button" className="btn btn-danger">
                     Delete
                   </button>{" "}
                 </div>
