@@ -1,7 +1,7 @@
 import React from "react";
 import ToDoItem from "./ToDoItem";
 
-export default function ToDoList() {
+export default function ToDoList(props) {
   return (
     <div className="pt-4">
       <table className="table">
@@ -12,9 +12,17 @@ export default function ToDoList() {
             <th className="col-6">Description</th>
           </tr>
         </thead>
-            <ToDoItem/>
+
         <tbody>
 
+          {props.data.map((dt,index)=>{
+            return (
+              <>
+              <ToDoItem nw_dt={dt} inx={index}   />
+              </>
+            )
+          })}
+          
         </tbody>
       </table>
     </div>
