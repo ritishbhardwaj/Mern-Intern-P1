@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ToDoItem(props) {
   let dt= props.nw_dt
-  let index = props.inx +1
+  let index = props.inx +  1
   // let 
   return (
     <>
