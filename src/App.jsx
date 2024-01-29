@@ -7,14 +7,7 @@ import ToDoList from "./Components/ToDoList";
 export default function App() {
 
   const data=[
-    {
-      title : "typing diary",
-      desc : "type your thoughts on laptop's notebook today"
-    },
-    {
-      title : "eating breakfast",
-      desc : "eat breakfast at 7:00 am"
-    }
+  
   ]
 
   return (

@@ -1,7 +1,17 @@
 import React from "react";
 import ToDoItem from "./ToDoItem";
+import Error from "./Error";
 
 export default function ToDoList(props) {
+
+  if (props.data.length===0){
+    return (
+      <>
+      <br/>
+      <Error/>
+      </>
+    )
+  }
   return (
     <div className="pt-4">
       <table className="table">
